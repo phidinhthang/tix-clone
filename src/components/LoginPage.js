@@ -13,7 +13,7 @@ import {
 
 
 
-export default const LoginPage = () => {
+const LoginPage = () => {
 	return (
 		<Wrapper>
 			<LoginCard>
@@ -39,3 +39,5 @@ export default const LoginPage = () => {
 		</Wrapper>
 	)
 }
+
+export default LoginPage;
