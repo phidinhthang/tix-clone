@@ -13,7 +13,7 @@ import {
 
 
 
-export default function LoginPage() {
+export default const LoginPage = () => {
 	return (
 		<Wrapper>
 			<LoginCard>
