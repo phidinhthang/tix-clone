@@ -1,0 +1,102 @@
+.dropdown-container {
+	padding:0px 10px;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color:white;
+	display:flex;
+	z-index:9999;
+	width:950px;
+	height:80px;
+	border-radius: 5px;
+	align-items: center;
+	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.1),
+							0px 1px 5px 1px rgba(0,0,0,0.1),
+							-1px 0px 5px 1px rgba(0,0,0,0.1),
+							0px -1px 5px 1px rgba(0,0,0,0.1);
+}
+
+.dropdown-film, .dropdown-cinema, .dropdown-date, .dropdown-time {
+	position:relative;
+	border-right:1px solid #ccc;
+	padding:8px;
+	font-size:15px;
+	cursor:pointer;
+}
+
+.dropdown-film > p, .dropdown-cinema > p, .dropdown-date > p, .dropdown-time > p {
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	max-width:85%;
+	font-size:14px;
+}
+
+.dropdown-film:after, .dropdown-cinema:after, .dropdown-date:after, .dropdown-time:after{
+	content: "\f107";
+	font-family:'FontAweSome';
+	position:absolute;
+	right:10px;
+	top:50%;
+	transform: translateY(-50%);
+	color:#888;
+	font-size:18px;
+}
+
+.dropdown-film {
+	flex-basis:33.33%;
+	width:33.33%;
+}
+.dropdown-cinema, .dropdown-date, .dropdown-time {
+	flex-basis:16.66%;
+	width:16.66%;
+}
+
+.dropdown-film > ul, .dropdown-cinema > ul, .dropdown-date > ul, .dropdown-time > ul {
+	position:absolute;
+	top:105%;
+	left:0%;
+	overflow-x:hidden;
+	padding:5px 0px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	background: #fff;
+	overflow-y:scroll;
+}
+
+.dropdown-film > ul::-webkit-scrollbar, .dropdown-cinema > ul::-webkit-scrollbar, .dropdown-date > ul::-webkit-scrollbar, .dropdown-time > ul::-webkit-scrollbar{
+	width:3px;
+	background:#ddd;
+}
+
+.dropdown-film > ul::-webkit-scrollbar-thumb, .dropdown-cinema > ul::-webkit-scrollbar-thumb, .dropdown-date > ul::-webkit-scrollbar-thumb, .dropdown-time > ul::-webkit-scrollbar-thumb{
+	background: #ccc;
+  border-radius: 2px;
+}
+.dropdown-film > ul > li, .dropdown-cinema > ul > li, .dropdown-date > ul > li, .dropdown-time > ul > li {
+	padding:6px 15px;
+	transition:all .3s ease-in-out;
+	white-space:nowrap;
+	font-size:13px;
+}
+
+.dropdown-film > ul > li:hover, .dropdown-cinema > ul > li:hover, .dropdown-date > ul > li:hover, .dropdown-time > ul > li:hover {
+	background-color:#60c5ef;
+	color:white;
+}
+
+.dropdown-date > ul, .dropdown-time > ul{
+	min-width:160px;
+}
+
+.dropdown-container button {
+	background-color:#4a4a4a;
+	color:white;
+	font-size:14px;
+	text-transform: uppercase;
+	padding:10px 22px;
+	border-radius: 4px;
+	margin-left:auto;
+	margin-right:auto;
+}

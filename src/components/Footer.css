@@ -1,0 +1,221 @@
+.footer-app {
+	height:100vh;
+	margin-top:55px;
+	background-image: url('/app/images/backapp.jpg');
+	background-position: -100px center;
+}
+
+.app-wrapper {
+	width:100%;
+	max-width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	background: transparent;
+	height:100%;
+	display:flex;
+}
+
+.app-wrapper .app-info {
+	flex-basis:50%;
+	color:white;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right:150px;
+	align-items: flex-start;
+}
+
+.app-wrapper .app-info h1 {
+	font-weight:600;
+	line-height:1.7;
+	margin-bottom:30px;
+}
+
+.app-wrapper .app-info p {
+	font-weight:600;
+	margin-bottom:20px;
+}
+
+.app-wrapper .app-info button {
+	background: #fb4226;
+	padding:10px 20px;
+	border-radius: 5px;
+	font-size:16px;
+	color:white;
+	font-weight:600;
+	margin:10px 0;
+}
+
+.app-wrapper .app-info small {
+	font-size:13px;
+}
+
+.app-wrapper .app-info span {
+	border-bottom:1px solid white;
+
+}
+
+.app-wrapper .app-carousel {
+	border:3px solid #666;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin-top:auto;
+	margin-bottom: auto;
+	width:195px;
+	height:413px;
+	background: transparent;
+	border-radius: 20px;
+	position:relative;
+	overflow:hidden;
+}
+
+.app-wrapper .app-carousel img {
+	width:100%;
+	height:91%;
+	border-radius: 20px;
+	outline:none;
+	border:none;
+	overflow:hidden;
+}
+
+.app-wrapper .app-carousel > div {
+	overflow:hidden;
+	border-radius:20px ;
+}
+
+.information-wrapper {
+	background: #000;
+}
+
+.information-wrapper .information {
+	width:100%;
+	max-width:950px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content: space-between;
+	color:white;
+	border-bottom:1px solid #888;
+}
+
+.information-wrapper .information h4{
+	font-size:11px;
+	font-weight:400;
+	text-transform: uppercase;
+}
+
+.information-wrapper .information img {
+	width:30px;
+	height:30px;
+}
+
+.information-wrapper .information .partner img {
+	border-radius:50%;
+}
+
+.information-wrapper .information .tix {
+	flex-basis:33%;
+}
+
+.information-wrapper .information .tix .content {
+	margin-top:10px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.information-wrapper .information .tix .content li {
+	font-size:13px;
+	font-weight:600;
+	color:#aaa;
+	line-height:2;
+	transition:color .2s ease;
+}
+
+.information-wrapper .information .tix .content li:hover {
+	color:#eee;
+}
+
+.information-wrapper .information .partner {
+	flex-basis:27%;
+	display:flex;
+	flex-wrap: wrap;
+	margin-right:15px;
+	margin-bottom:15px;
+}
+
+.information-wrapper .information .partner h4 {
+	margin-bottom:20px;
+}
+
+.information-wrapper .information .partner img{
+	margin-right:17px;
+	margin-bottom:17px;	
+} 
+
+.information-wrapper .information .social {
+	flex-basis:25%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.information-wrapper .information .social-item {
+	text-align: center;
+}
+
+.information-wrapper .information .social-item img {
+	margin:10px 6px;
+}
+
+.footer-container {
+	background: #000;
+	padding-top:20px;
+}
+
+.footer {
+	width:100%;
+	max-width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+}
+
+.footer .logo {
+	flex:0 0 auto;
+	width:75px;
+	height:38px;
+	border-radius:8px;
+	overflow:hidden;
+}
+
+.footer .logo img, .footer .gov img {
+	width:100%;
+	height:100%;
+}
+
+.footer .gov {
+	flex:0 0 auto;
+	width:120px;
+	height:45px;
+}
+
+.footer .contact {
+	margin-left:20px;
+	margin-right:auto;
+}
+
+.footer .contact p{
+	color:#888;
+	font-size:13px;
+	line-height:1.6;
+}
+
+.footer .contact p span {
+	color:#fb4226;
+}
+
+.footer .contact h4 {
+	font-size:13px;
+	font-weight:600;
+	color:white;
+}
+

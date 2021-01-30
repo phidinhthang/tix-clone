@@ -1,0 +1,89 @@
+.single-film {
+	width:25%;
+	padding:10px;
+	position:relative;
+	margin-top:20px;
+}
+
+.single-film img{
+	width:100%;
+	
+	border-radius:5px;
+}
+
+.single-film .rate {
+	position:absolute;
+	top:20px;
+	right:20px;
+	background-color: #111f36;
+	color:white;
+	width:60px;
+	height:45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:5px;
+}
+
+.single-film .rate p {
+	font-size:20px;
+}
+
+.single-film .content {
+	margin-top:5px;
+	display:flex;
+	align-items: flex-start;
+	height:45px;
+}
+
+.single-film .content .level {
+	width:34px;
+	height:22px;
+	border-radius:4px;
+	color:white;
+	font-size:14px;
+	margin-right:8px;
+	text-align:center;
+	line-height: 22px;
+	font-weight: 600;
+
+}
+
+.single-film .content .level.high {
+	background: #fb4226;
+}
+
+.single-film .content .level.low {
+	background: #;
+}
+
+.single-film .content > p {
+	font-weight: 600;
+	white-space: wrap;
+	font-size:14px;
+}
+
+.single-film .time {
+	font-size:13px;
+	color:#333;
+}
+
+.single-film .play {
+	position:absolute;
+	top:45%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	transition:none;
+}
+
+.single-film .buy-ticket {
+	background:#fb4226;
+	position:relative;
+	margin-top:5px;
+	width:100%;
+	border-radius:5px;
+	color:white;
+	font-size:20px;
+	text-transform: uppercase;
+	transform:translate(0,0);
+}
