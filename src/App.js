@@ -28,10 +28,10 @@ const App = () => {
 	},[])
 	return (
 		<Router>
+				 <NavBar />
 
 			<Switch>
 				<Route path="/" exact>
-				 <NavBar />
 				 <Carousel />
 				 <HomeMovie id="home-movie" />
 				 <CinemaBlock id="cluster" />
